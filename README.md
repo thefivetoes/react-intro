@@ -21,6 +21,16 @@ TODO: Link to slides.
   - babel-eslint
   - eslint-plugin-babel
 
+## Tutorial Steps
+  1. Add a NewFriendForm and a FriendList to the rendered output of MainDashboard
+  - Add Last Name, Twitter Handle, is BFF Toggle and Submit Button to NewFriend Form
+  - Create Inputs, Toggle and Buttons in NewFriendForm > render()
+  - Create handlers for the new Inputs and Toggles in NewFriendForm.jsx
+  - Hook up Submit button in NewFriendForm.jsx
+  - Add friends to state in MainDashboard > handleCreateNewFriend()
+  - Test to see if your friends are being passed in - "You have 0 friend(s)" value should change when you submit the form.
+  - Pull data from FriendList's state into FriendList > outputTileElements() to create a title, subtitle and unique Identicon
+
 ## Additional React Introductory Resources
 
 - [Comparison notes of 4 popular JS Frameworks](https://gist.github.com/makmanalp/9b7f50aa16d21c2f9d37) by @makmanalp. Really solid, unbiased comparison of Angular, Ember, Backbone and React.
