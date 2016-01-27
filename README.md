@@ -1,7 +1,7 @@
 # React JS: A Hands-On Introduction
 React is "a JavaScript Library for Building User Interfaces," and all the cool kids are using it. So let's get together and talk about JS frameworks and what makes React so special. This is the example repo for an interactive presentation.
 
-TODO: Link to slides.
+[Link to slides.](http://www.slideshare.net/JustinSmith24/react-js-a-handson-introduction)
 
 ## Getting Started
 - Clone this repo.
