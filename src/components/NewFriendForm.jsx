@@ -57,7 +57,7 @@ class NewFriendForm extends Component {
   render() {
     /**
     * ES6 Alert - Object Destructuring
-    * 
+    *
     * This is a more terse way of defining variables from an object.
     * Defines variables for all vars on the left from corresponding keyed values
     * in the object on the right.
@@ -73,7 +73,7 @@ class NewFriendForm extends Component {
     return (
       <div style={styles.friendFormContainer}>
         <h1 style={styles.formHeading}>Add a Friend</h1>
-        <div>
+        <div style={styles.inputContainerBase}>
           <TextField
             hintText="Rick"
             floatingLabelText="First Name"
@@ -81,7 +81,7 @@ class NewFriendForm extends Component {
             onChange={this.handleFirstNameChange}/>
         </div>
 
-        <div>
+        <div style={styles.inputContainerBase}>
           <TextField
             hintText="Jagger"
             floatingLabelText="Last Name"
@@ -89,7 +89,7 @@ class NewFriendForm extends Component {
             onChange={this.handleLastNameChange}/>
         </div>
 
-        <div>
+        <div style={styles.inputContainerBase}>
           <TextField
             hintText="@thefivetoes"
             floatingLabelText="Twitter Handle"
@@ -97,18 +97,18 @@ class NewFriendForm extends Component {
             onChange={this.handleTwitterChange}/>
         </div>
 
-        <div>
+        <div style={styles.toggleContainerBase}>
           <Toggle
             label="Is a BFF?"
             onToggle={this.handleBFFChange}
             defaultToggled={isBFF}/>
         </div>
 
-        <div>
-        <FlatButton
-          label="Save New Friend"
-          secondary={true}
-          onClick={this.handleSaveClick}/>
+        <div style={styles.submitContainerBase}>
+          <FlatButton
+            label="Save New Friend"
+            secondary={true}
+            onClick={this.handleSaveClick}/>
         </div>
 
       </div>

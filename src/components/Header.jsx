@@ -5,9 +5,7 @@ import styles from '../styles/rootStyles';
 class Header extends Component {
   render() {
     return (
-      <div style={styles.headerContainer}>
-        header!
-      </div>
+      <div style={styles.headerContainer}></div>
     );
   }
 }

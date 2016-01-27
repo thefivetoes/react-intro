@@ -1,6 +1,13 @@
+import MUIColors from 'material-ui/lib/styles/colors';
+
+let inputContainerStyles = {
+
+}
+
 let styles = {
   container: {
     width: '100%',
+    height: '100%',
     paddingTop: 0,
     paddingBottom: 0,
     paddingLeft: 0,
@@ -13,17 +20,20 @@ let styles = {
 
   headerContainer: {
     width: '100%',
-    background: 'blue'
+    height: '2%',
+    background: MUIColors.deepPurple200
   },
 
   footerContainer: {
     width: '100%',
-    background: 'green'
+    height: '4%',
+    background: MUIColors.deepPurple900
   },
 
   mainContentArea: {
     display: 'flex',
-    marginTop: 24
+    minHeight: '94%',
+    paddingTop: 24
   },
 
   friendFormContainer: {
@@ -37,6 +47,21 @@ let styles = {
 
   friendListContainer: {
     marginLeft: 24
+  },
+
+  inputContainerBase: {
+    ...inputContainerStyles
+  },
+
+  toggleContainerBase: {
+    ...inputContainerStyles,
+    marginTop: 30
+  },
+
+  submitContainerBase: {
+    ...inputContainerStyles,
+    marginTop: 30,
+    textAlign: 'center'
   },
 
   friendGridList: {
