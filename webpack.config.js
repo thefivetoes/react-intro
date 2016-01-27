@@ -108,14 +108,6 @@ module.exports = {
         include: __dirname
       },
       {
-        test: /\.scss$/,
-        loader: 'style!css!sass?sourceMap'
-      },
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader?sourceMap'
-      },
-      {
         test: /\.jpe?g$|\.gif$|\.png$|\.svg$/,
         loader: 'file?name=img/[name]-[sha1:hash:hex:10].[ext]' // hash!
       }
