@@ -28,6 +28,7 @@ class NewFriendForm extends Component {
       return(
         <GridTile
           key={key}
+          style={{fontFamily: 'Roboto, sans-serif'}}
           title={`${friend.firstName} ${friend.lastName}`}
           subtitle={<span>{friend.twitter}</span>}
           actionIcon={bffIcon}>
