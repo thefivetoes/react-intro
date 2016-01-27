@@ -17,9 +17,7 @@ class MainDashboard extends Component {
     let oldFriends = this.state && this.state.friends ? this.state.friends : [];
     let newFriends = [friend, ...oldFriends];
 
-    this.setState({
-      friends: newFriends
-    });
+    //Add our newFriends to this component's state below
   }
 
   render() {
@@ -29,10 +27,12 @@ class MainDashboard extends Component {
       <div style={styles.container}>
         <Header />
         <div style={styles.mainContentArea}>
-          <NewFriendForm
-            onCreateNewFriend={this.handleCreateNewFriend} />
-          <FriendList
-            friends={friends}/>
+          {/*Add a NewFriendForm below*/}
+          {/*be sure to hook up the onCreateNewFriend handler*/}
+
+          {/*Add a FriendList below*/}
+          {/*Be sure to pass in our friends*/}
+
         </div>
         <Footer />
       </div>

@@ -1,0 +1,3 @@
+## Tutorial Steps
+1. Add a NewFriendForm and a FriendList to the rendered output of MainDashboard
+- Add friends to state in MainDashboard > handleCreateNewFriend()

@@ -32,22 +32,16 @@ class NewFriendForm extends Component {
     this.setState({firstName: event.target.value});
   }
 
-  handleLastNameChange(event) {
-    this.setState({lastName: event.target.value});
-  }
+  /*Add a Last Name Change Handler below*/
 
-  handleTwitterChange(event) {
-    this.setState({twitter: event.target.value});
-  }
-
-  handleBFFChange(event) {
-    this.setState({isBFF: event.target.checked});
-  }
+  /*Add a Twitter Handle Toggle Handler below*/
 
   handleSaveClick() {
-    let friend = this.state;
-    this.props.onCreateNewFriend(friend);
-    this.setState(this.initialState);
+    /*Cache friend from this component's state below*/
+
+    /*Trigger this component's prop: onCreateNewFriend and pass in our new friend*/
+
+    /*Reset the form fields by setting this component's state to the initial state*/
   }
 
   componentWillMount() {
@@ -81,35 +75,19 @@ class NewFriendForm extends Component {
             onChange={this.handleFirstNameChange}/>
         </div>
 
-        <div style={styles.inputContainerBase}>
-          <TextField
-            hintText="Jagger"
-            floatingLabelText="Last Name"
-            value={lastName}
-            onChange={this.handleLastNameChange}/>
-        </div>
+        {/*Add a Last Name TextField below*/}
+        {/*be sure to create an onChange handler*/}
 
-        <div style={styles.inputContainerBase}>
-          <TextField
-            hintText="@thefivetoes"
-            floatingLabelText="Twitter Handle"
-            value={twitter}
-            onChange={this.handleTwitterChange}/>
-        </div>
+        {/*Add a Twitter Handle TextField below*/}
+        {/*be sure to create an onChange handler*/}
 
-        <div style={styles.toggleContainerBase}>
-          <Toggle
-            label="Is a BFF?"
-            onToggle={this.handleBFFChange}
-            defaultToggled={isBFF}/>
-        </div>
+        {/*Add a Twitter Handle Toggle below*/}
+        {/*be sure to create an onToggle handler*/}
+        {/*Check the Material UI Docs for Toggle http://www.material-ui.com/#/components/toggle*/}
 
-        <div style={styles.submitContainerBase}>
-          <FlatButton
-            label="Save New Friend"
-            secondary={true}
-            onClick={this.handleSaveClick}/>
-        </div>
+        {/*Add a Submit FlatButton below*/}
+        {/*be sure to create an onClick handler*/}
+        {/*Check the Material UI Docs for Toggle http://www.material-ui.com/#/components/flat-button*/}
 
       </div>
     );
