@@ -81,7 +81,7 @@ class NewFriendForm extends Component {
         {/*Add a Twitter Handle TextField below*/}
         {/*be sure to create an onChange handler*/}
 
-        {/*Add a Twitter Handle Toggle below*/}
+        {/*Add is BFF Toggle below*/}
         {/*be sure to create an onToggle handler*/}
         {/*Check the Material UI Docs for Toggle http://www.material-ui.com/#/components/toggle*/}
 
