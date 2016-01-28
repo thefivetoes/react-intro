@@ -34,7 +34,9 @@ class NewFriendForm extends Component {
 
   /*Add a Last Name Change Handler below*/
 
-  /*Add a Twitter Handle Toggle Handler below*/
+  /*Add a Twitter Handle Change Handler below*/
+
+  /*Add an is BFF Toggle Handler below*/
 
   handleSaveClick() {
     /*Cache friend from this component's state below*/
